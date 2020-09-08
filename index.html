@@ -44,9 +44,15 @@
         </div>
       </div>
      </div>
-     <div class="own-recipe">
+     <div class="own-recipe hidden">
       <label class="footer-spacing" for="recipe-type">Recipe Type:</label>
-      <input type="text" id="recipe-type" class="input-detailing">
+      <select id="recipe-type" name="dish-type" class="input-detailing">
+        <option value="null">[Choose an Option]</option>
+        <option id="meals" value="side">Side</option>
+        <option id="meals" value="main-dish">Main Dish</option>
+        <option id="meals" value="dessert">Dessert</option>
+      </select>
+      <!-- <input type="text" id="recipe-type" class="input-detailing"> -->
       <label class="footer-spacing" for="recipe-name">Recipe Name:</label>
       <input type="text" id="recipe-name" class="input-detailing">
       <button id="new-addition">ADD NEW</button>
